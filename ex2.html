@@ -18,19 +18,24 @@
     <p>Write a JavaScript function that changes the color of the block to a different color when the BUTTON with the changeColorBtn ID is pressed.</p>
     <p>Next, write a function that is triggered by the 2nd button to change the color of the paragraph text.</p>
 
-
     <div id="box"></div>
-    <button id="changeColorBtn">Change Color</button>
+    <button id="changeColorBtn" onclick="changeColor()">Change Color</button>
 
     <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sit quae inventore vitae rerum magnam corrupti. 
         Corrupti, amet! Nemo at asperiores repellat fugit facere non autem temporibus amet ex harum.</p>
-    <button id="paraBtn">Change the Paragraph Text Color</button>
+    <button id="paraBtn" onclick="changeTextColor()">Change the Paragraph Text Color</button>
 
     <br><br>
     <a href="index.html">Back to the home page</a>
 
     <script>
-        // Write your function here
+        function changeColor() {
+            document.getElementById("box").style.backgroundColor = "red";
+        };
+
+        function changeTextColor() {
+            document.getElementById("para").style.color = "red";
+        }
     </script>
 </body>
 </html>

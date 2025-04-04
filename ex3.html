@@ -22,7 +22,19 @@
     <a href="index.html">Back to the home page</a>
 
     <script>
-        // Write your function here
+        function addParagraph() {
+            const paragraph = document.createElement("p");
+            const textContent = document.createTextNode("This is a new paragraph.");
+            paragraph.appendChild(textContent);
+            document.body.appendChild(paragraph);
+        }
+
+        function addH3() {
+            const header3 = document.createElement("p");
+            const headerContent = document.createTextNode("This is my H3.");
+            header3.appendChild(headerContent);
+            document.body.appendChild(header3);
+        }
     </script>
 </body>
 </html>

@@ -15,7 +15,7 @@
 
     <ul id="myList">
         <li>Item 1</li>
-        <li>Item 2</li>
+        <li id="item2">Item 2</li>
         <li>Item 3</li>
     </ul>
     <button onclick="insertBefore()">Insert Before Second Item</button>
@@ -25,7 +25,19 @@
     <a href="index.html">Back to the home page</a>
 
     <script>
-        // Write your function here
+        function insertBefore() {
+            const newLi = document.createElement("li");
+            const newText = document.createTextNode("New Item Before");
+            newli.appendChild(newText);
+            document.item2.appendChild(newLi);
+        }
+
+        function insertAfter() {
+            const liAfter = document.createElement("li");
+            const textAfter = document.createTextNode("New Item After");
+            liAfter.appendChild(textAfter);
+            document.mylist.appendChlid(liAfter);
+        }
     </script>
 </body>
 </html>
